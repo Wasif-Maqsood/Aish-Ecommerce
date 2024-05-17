@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaSquareYoutube } from "react-icons/fa6";
+
+import { FaFacebookF } from "react-icons/fa6";
+
+import { FaLinkedinIn } from "react-icons/fa6";
+// import { FaSquareYoutube } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 
 const Footer = () => {
@@ -11,16 +13,32 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-10 max-md:px-0">
       <nav className="grid grid-flow-col max-sm:grid-flow-row gap-4">
-        <Link to="/" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
+        <Link
+          to="/"
+          className="link link-hover text-2xl max-md:text-xl text-accent-content"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           Home
         </Link>
-        <Link to="/shop" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
+        <Link
+          to="/shop"
+          className="link link-hover text-2xl max-md:text-xl text-accent-content"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           Shop
         </Link>
-        <Link to="/about" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
+        <Link
+          to="/about"
+          className="link link-hover text-2xl max-md:text-xl text-accent-content"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           About us
         </Link>
-        <Link to="/contact" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
+        <Link
+          to="/contact"
+          className="link link-hover text-2xl max-md:text-xl text-accent-content"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           Contact
         </Link>
         {!loginState && (
@@ -44,15 +62,39 @@ const Footer = () => {
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
-          <FaSquareXTwitter className="text-6xl max-sm:text-4xl text-accent-content" />
-          <FaSquareFacebook className="text-6xl max-sm:text-4xl text-accent-content" />
-          <FaSquareInstagram className="text-6xl max-sm:text-4xl text-accent-content" />
-          <FaSquareYoutube className="text-6xl max-sm:text-4xl text-accent-content" />
+          <a
+            href="https://x.com/wasif_maqsood_"
+            target="blank"
+            className="text-6xl max-sm:text-4xl text-accent-content"
+          >
+            <FaSquareXTwitter />
+          </a>
+          <a
+            href="https://www.facebook.com/muhammad.wasif.906"
+            target="_blank"
+            className="text-6xl max-sm:text-4xl text-accent-content"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/wasif-maqsood-346127165/?originalSubdomain=pk"
+            target="_blank"
+            className="text-6xl max-sm:text-4xl text-accent-content"
+          >
+            <FaLinkedinIn />
+          </a>
+          {/* <a
+            href="https://www.facebook.com/muhammad.wasif.906"
+            target="_blank"
+            className="text-6xl max-sm:text-4xl text-accent-content"
+          >
+            <FaSquareYoutube />
+          </a> */}
         </div>
       </nav>
       <aside>
         <p className="text-2xl max-sm:text-sm text-accent-content">
-          Copyright © 2023 - All right reserved by Kuzma Clothing & Shoes
+          Copyright © 2024 - All right reserved by syncsolutions.dev
         </p>
       </aside>
     </footer>
