@@ -36,7 +36,7 @@ const Login = () => {
   const proceedLogin = (e) => {
     e.preventDefault();
     if (isValidate()) {
-      fetch("http://localhost:8080/user")
+      fetch("http://39.61.51.195:8002/user")
         .then((res) => res.json())
         .then((res) => {
           let data = res;

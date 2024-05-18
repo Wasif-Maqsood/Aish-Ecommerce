@@ -15,7 +15,7 @@ const OrderHistory = () => {
   const getOrderHistory = async () => {
     try {
       // saljemo get(default) request
-      const response = await axios.get("http://localhost:8080/orders");
+      const response = await axios.get("http://39.61.51.195:8002/orders");
       const data = response.data;
       setOrders(
         data.filter((order) => order.userId === localStorage.getItem("id"))

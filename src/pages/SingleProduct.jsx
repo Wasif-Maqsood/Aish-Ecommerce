@@ -25,7 +25,7 @@ import { store } from "../store";
 export const singleProductLoader = async ({ params }) => {
   const { id } = params;
 
-  const response = await axios(`http://localhost:8080/products/${id}`);
+  const response = await axios(`http://39.61.51.195:8002/products/${id}`);
 
   return { productData: response.data };
 };
@@ -69,7 +69,7 @@ const SingleProduct = () => {
   const addToWishlistHandler = async (product) => {
     try {
       const getResponse = await axios.get(
-        `http://localhost:8080/user/${localStorage.getItem("id")}`
+        `http://39.61.51.195:8002/user/${localStorage.getItem("id")}`
       );
       const userObj = getResponse.data;
 
