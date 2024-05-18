@@ -63,21 +63,21 @@ const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
-            href="https://x.com/wasif_maqsood_"
+            href="https://www.upwork.com/freelancers/~011171a2267e99c9ec"
             target="blank"
             className="text-6xl max-sm:text-4xl text-accent-content"
           >
             <FaSquareXTwitter />
           </a>
           <a
-            href="https://www.facebook.com/muhammad.wasif.906"
+            href="https://www.upwork.com/freelancers/~011171a2267e99c9ec"
             target="_blank"
             className="text-6xl max-sm:text-4xl text-accent-content"
           >
             <FaFacebookF />
           </a>
           <a
-            href="https://www.linkedin.com/in/wasif-maqsood-346127165/?originalSubdomain=pk"
+            href="https://www.upwork.com/freelancers/~011171a2267e99c9ec"
             target="_blank"
             className="text-6xl max-sm:text-4xl text-accent-content"
           >
@@ -94,7 +94,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p className="text-2xl max-sm:text-sm text-accent-content">
-          Copyright © 2024 - All right reserved by syncsolutions.dev
+          Copyright © 2024 - All right reserved by Wasif Maqsood
         </p>
       </aside>
     </footer>

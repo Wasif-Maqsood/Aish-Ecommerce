@@ -59,13 +59,13 @@ const Header = () => {
           <li>
             <FaHeadphones className="text-2xl max-sm:text-lg text-accent-content" />
             <span className="text-2xl max-sm:text-lg text-accent-content">
-              +923224540783
+              +92***********
             </span>
           </li>
           <li>
             <FaRegEnvelope className="text-2xl max-sm:text-lg text-accent-content" />{" "}
             <span className="text-2xl max-sm:text-lg text-accent-content">
-              wasif@syncsolutions.dev
+              *****@syncsolutions.dev
             </span>
           </li>
         </ul>
